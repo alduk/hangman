@@ -14,6 +14,7 @@ Hangman - game object. Implements game states, transitions and helper methods.
 
 Typical usage:
 
+```scala
 val game  = new Game {
     val reader = new CSVReader(args(0))
     val solver = new DictionarySolver(Dictionary("dict.txt"))
@@ -21,3 +22,4 @@ val game  = new Game {
 }
 
 game.runner.run
+```
