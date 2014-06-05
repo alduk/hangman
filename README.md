@@ -2,7 +2,7 @@ hangman
 =======
 Sample implementation of hangman game.
 
-This implementation based on Cake pattrn.
+This implementation based on Cake pattern.
 http://jonasboner.com/2008/10/06/real-world-scala-dependency-injection-di
 
 Main compositions units:
