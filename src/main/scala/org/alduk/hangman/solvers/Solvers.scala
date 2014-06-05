@@ -56,9 +56,13 @@ trait Solvers {
       state match {
         case cont @ Cont(word, attempts, guesses) => {
           println(state)
-          val ch = alphabet(index)
-          val s = Hangman.guess(cont, ch)
-          solve2(index + 1, s)
+          if (alphabet.length < index) {
+            val ch = alphabet(index)
+            val s = Hangman.guess(cont, ch)
+            solve2(index + 1, s)
+          } else {
+            Defeat(cont)
+          }
         }
         case a => a
       }
